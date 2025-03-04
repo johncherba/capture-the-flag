@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
+import useTypewriter from "../../hooks/useTypewriter";
 
 function CaptureTheFlag() {
   const [htmlContent, setHtmlContent] = useState("");
@@ -26,24 +27,6 @@ function CaptureTheFlag() {
 
     fetchHtml();
   }, [isLoading, error]);
-
-  const useTypewriter = (text, speed = 0) => {
-    const [index, setIndex] = useState(0);
-    const displayText = useMemo(() => text.slice(0, index), [index]);
-    useEffect(() => {
-      if (index >= text.length) return;
-
-      const timeoutId = setTimeout(() => {
-        setIndex((i) => i + 1);
-      }, speed);
-
-      return () => {
-        clearTimeout(timeoutId);
-      };
-    }, [index, text, speed]);
-
-    return displayText;
-  };
 
   const flag = useTypewriter(htmlContent, 500);
 
