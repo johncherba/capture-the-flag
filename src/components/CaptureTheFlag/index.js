@@ -25,7 +25,6 @@ function CaptureTheFlag() {
     };
 
     fetchHtml();
-    console.log(htmlContent);
   }, [isLoading, error]);
 
   const useTypewriter = (text, speed = 0) => {
