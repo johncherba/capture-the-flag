@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import useTypewriter from "../../hooks/useTypewriter";
 
 function CaptureTheFlag() {
