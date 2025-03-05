@@ -26,7 +26,7 @@ function CaptureTheFlag() {
     };
 
     fetchHtml();
-  }, [isLoading, error]);
+  }, [isLoading, error, htmlContent]);
 
   const flag = useTypewriter(htmlContent, 500);
 
