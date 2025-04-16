@@ -10,7 +10,7 @@ function CaptureTheFlag() {
     const fetchHtml = async () => {
       try {
         const response = await fetch(
-          "https://wgg522pwivhvi5gqsn675gth3q0otdja.lambda-url.us-east-1.on.aws/75706c"
+          "https://wgg522pwivhvi5gqsn675gth3q0otdja.lambda-url.us-east-1.on.aws/6e6174"
         );
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -55,8 +55,10 @@ function CaptureTheFlag() {
 export default CaptureTheFlag;
 
 // BONUS Code for step 2
+// https://tns4lpgmziiypnxxzel5ss5nyu0nftol.lambda-url.us-east-1.on.aws/challenge
 // const elements = document.getElementsByClassName('ramp ref');
 // let url = Array.from(elements)
 //   .map(element => element.getAttribute('value'))
 //   .join('');
 // console.log(url);
+// result: https://wgg522pwivhvi5gqsn675gth3q0otdja.lambda-url.us-east-1.on.aws/6e6174
