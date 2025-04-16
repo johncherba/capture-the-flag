@@ -1,7 +1,3 @@
-# capture-the-flag
-
-Created with CodeSandbox
-
 # Ramp Challenge
 
 Thanks for applying to Ramp. Solve this CTF[1] challenge and add the result to your application.
